@@ -11,8 +11,7 @@ class FlipperClient {
         // No-op
     }
 
-    @Suppress("UNCHECKED_CAST")
-    fun <T : FlipperPlugin> getPluginByClass(cls: Class<T>?): T? {
-        return FlipperPlugin() as T
+    fun <T> getPluginByClass(cls: Class<T>?): NetworkFlipperPlugin? {
+        return NetworkFlipperPlugin()
     }
 }
