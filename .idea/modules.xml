@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flipper-android-no-op.iml" filepath="$PROJECT_DIR$/.idea/modules/flipper-android-no-op.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/flipper-android-no-op.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/flipper-android-no-op.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/flipperandroidnoop/flipper-android-no-op.flipperandroidnoop.iml" filepath="$PROJECT_DIR$/.idea/modules/flipperandroidnoop/flipper-android-no-op.flipperandroidnoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/soloadernoop/flipper-android-no-op.soloadernoop.iml" filepath="$PROJECT_DIR$/.idea/modules/soloadernoop/flipper-android-no-op.soloadernoop.iml" />
+    </modules>
+  </component>
+</project>

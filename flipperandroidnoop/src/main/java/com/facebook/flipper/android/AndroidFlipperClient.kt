@@ -7,4 +7,8 @@ object AndroidFlipperClient {
     @Synchronized
     fun getInstance(context: Context): FlipperClient =
         FlipperClient()
+
+    @Synchronized
+    fun getInstanceIfInitialized(): FlipperClient =
+        FlipperClient()
 }

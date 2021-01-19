@@ -8,4 +8,8 @@ class FlipperClient {
     fun start() {
         // No-op
     }
+
+    fun <T> getPluginByClass(cls: Class<T>?): T? {
+        return null
+    }
 }
