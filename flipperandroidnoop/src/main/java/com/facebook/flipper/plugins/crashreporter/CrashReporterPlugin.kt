@@ -1,6 +1,8 @@
 package com.facebook.flipper.plugins.crashreporter
 
-class CrashReporterPlugin {
+import com.facebook.flipper.core.FlipperPlugin
+
+class CrashReporterPlugin : FlipperPlugin() {
     companion object {
         @JvmStatic
         fun getInstance() = CrashReporterPlugin()

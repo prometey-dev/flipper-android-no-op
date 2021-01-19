@@ -8,9 +8,11 @@ import com.facebook.flipper.plugins.databases.DatabasesFlipperPlugin
 import com.facebook.flipper.plugins.inspector.DescriptorMapping
 import com.facebook.flipper.plugins.inspector.InspectorFlipperPlugin
 import com.facebook.flipper.plugins.navigation.NavigationFlipperPlugin
+import com.facebook.flipper.plugins.network.FlipperOkhttpInterceptor
 import com.facebook.flipper.plugins.network.NetworkFlipperPlugin
 import com.facebook.flipper.plugins.sharedpreferences.SharedPreferencesFlipperPlugin
 import com.facebook.soloader.SoLoader
+import okhttp3.OkHttpClient
 
 class FlipperApplication : Application() {
 
@@ -34,5 +36,11 @@ class FlipperApplication : Application() {
                 start()
             }
         }
+
+        val flipperClient = AndroidFlipperClient.getInstanceIfInitialized()
+        val networkFlipperPlugin = flipperClient?.getPluginByClass(NetworkFlipperPlugin::class.java)
+
+        val okHttpClient = OkHttpClient.Builder()
+            .addNetworkInterceptor(FlipperOkhttpInterceptor(networkFlipperPlugin))
     }
 }

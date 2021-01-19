@@ -9,6 +9,6 @@ object AndroidFlipperClient {
         FlipperClient()
 
     @Synchronized
-    fun getInstanceIfInitialized(): FlipperClient =
+    fun getInstanceIfInitialized(): FlipperClient? =
         FlipperClient()
 }

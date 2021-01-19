@@ -1,5 +1,7 @@
 package com.facebook.flipper.core
 
+import com.facebook.flipper.plugins.network.NetworkFlipperPlugin
+
 class FlipperClient {
     fun addPlugin(plugin: Any? = null) {
         // No-op
@@ -9,7 +11,8 @@ class FlipperClient {
         // No-op
     }
 
-    fun <T> getPluginByClass(cls: Class<T>?): T? {
-        return null
+    @Suppress("UNCHECKED_CAST")
+    fun <T : FlipperPlugin> getPluginByClass(cls: Class<T>?): T? {
+        return FlipperPlugin() as T
     }
 }

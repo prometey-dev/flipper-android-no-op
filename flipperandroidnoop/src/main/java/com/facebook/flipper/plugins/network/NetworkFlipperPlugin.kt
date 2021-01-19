@@ -1,3 +1,5 @@
 package com.facebook.flipper.plugins.network
 
-class NetworkFlipperPlugin
+import com.facebook.flipper.core.FlipperPlugin
+
+class NetworkFlipperPlugin : FlipperPlugin()

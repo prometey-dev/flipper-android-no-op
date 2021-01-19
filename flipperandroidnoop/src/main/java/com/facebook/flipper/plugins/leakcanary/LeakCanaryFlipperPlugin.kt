@@ -1,3 +1,5 @@
 package com.facebook.flipper.plugins.leakcanary
 
-class LeakCanaryFlipperPlugin
+import com.facebook.flipper.core.FlipperPlugin
+
+class LeakCanaryFlipperPlugin : FlipperPlugin()
